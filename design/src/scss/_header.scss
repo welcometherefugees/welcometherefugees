@@ -1,0 +1,30 @@
+header {
+  position: relative;
+  margin-bottom: 50px;
+
+  h1 {
+    display: inline-block;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  nav {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    a {
+      text-transform: uppercase;
+      color: $white;
+      font-weight: 900;
+      font-size: 1.75em;
+      margin: 0 15px;
+
+      &.active {
+        border-bottom: 0.1em solid $white;
+      }
+    }
+  }
+}
