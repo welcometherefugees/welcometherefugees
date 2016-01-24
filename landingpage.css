@@ -107,7 +107,7 @@ nav.language a:last-of-type {
 
 @media (max-width: 60em){
   body {
-    padding-bottom: 250px;
+    padding-bottom: 300px;
   }
 
   header a > span {
