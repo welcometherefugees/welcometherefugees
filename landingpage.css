@@ -5,6 +5,7 @@
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 200px;
   position: relative;
   background: #ed1c24;
   color: white;
@@ -41,6 +42,10 @@ h1 {
   font-size: 2.5em;
 }
 
+h1 a {
+  color: inherit;
+}
+
 h2 {
   font-size: 1.5em;
 }
@@ -49,11 +54,22 @@ span.black {
   color: black;
 }
 
-div.center {
-  width: 100%;
+header {
+  margin-top: 10%;
+  padding: 25px;
+}
+
+section.main {
+    width: 45em;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+section.center {
   position: absolute;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
 }
 
 ::selection {
@@ -63,4 +79,46 @@ div.center {
 }
 ::-moz-selection {
   background: #ed1c24; /* Gecko Browsers */
+}
+
+nav.language {
+  position: fixed;
+  left: 5px;
+  top: 5px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #000;
+}
+
+nav.language a {
+  color: inherit;
+  padding: 0 5px;
+  margin-left: -5px;
+  border-right: 2px solid #000;
+}
+
+nav.language a.active {
+  color: #FFF;
+}
+
+nav.language a:last-of-type {
+  border-right: none;
+}
+
+@media (max-width: 60em){
+  body {
+    padding-bottom: 250px;
+  }
+
+  header a > span {
+    display: block;
+  }
+
+  header h1 {
+    margin-bottom: 15px;
+  }
+
+  section.main {
+    width: 100%;
+  }
 }
