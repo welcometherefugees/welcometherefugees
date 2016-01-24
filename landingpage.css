@@ -10,7 +10,7 @@ body {
   min-height: 100%;
   margin: 0;
   padding: 0;
-  padding-bottom: 200px;
+  padding-bottom: 250px;
   position: relative;
   background: #ed1c24;
   color: white;
@@ -112,7 +112,7 @@ nav.language a:last-of-type {
 
 @media (max-width: 60em){
   body {
-    padding-bottom: 300px;
+    padding-bottom: 350px;
   }
 
   header a > span {
