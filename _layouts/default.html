@@ -12,13 +12,13 @@
     <meta property="og:url" content="{{ page.url }}">
     <meta property="og:image" content="{{ site.social_media_img }}">
     <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ t.site.description }}{% endif %}">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
     <meta property="og:site_name" content="{{ site.name }}">
     <meta property="og:see_also" content="{{ site.url }}">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="{{ page.url }}">
-    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
     <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ t.site.description }}{% endif %}">
     <meta name="twitter:image" content="{{ site.social_media_image }}">
 
