@@ -55,10 +55,19 @@
     <header>
       <h1><a href="/{% if lang != 'de' %}{{ lang }}{% endif %}"><span><span class="hashtag black">#</span><span class="welcome">welcome</span></span><span class="black">the</span><span class="refugees">refugees</span></a></h1>
 
-      <!--<nav>
-        <a href="#">Blog</a>
-        <a href="#">{{ t.navigation.information }}</a>
-      </nav>-->
+      <nav>
+        <!--<a href="#">Blog</a>-->
+        <ul>
+          <li>
+            <a href="">{{ t.navigation.information }}</a>
+
+            <ul>
+              <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.about.link }}">{{ t.navigation.about.text }}</a></li>
+              <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.help.link }}">{{ t.navigation.help.text }}</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="main">

@@ -18,13 +18,53 @@ header {
 
     a {
       text-transform: uppercase;
-      color: $white;
+      color: inherit;
       font-weight: 900;
       font-size: 1.75em;
-      margin: 0 15px;
 
       &.active {
         border-bottom: 0.1em solid $white;
+      }
+    }
+
+    ul {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+      li {
+        position: relative;
+        margin: 0 15px;
+        padding: 0;
+
+        & > ul {
+          width: 100%;
+          position: absolute;
+          background-color: $white;
+          color: $black;
+          font-size: 0.7em;
+          max-height: 0px;
+          overflow: hidden;
+          transition: max-height 1s;
+
+          li {
+            margin: 0;
+            padding: 5px 10px;
+
+            &:hover {
+              color: $red;
+            }
+          }
+        }
+
+        &:hover {
+          color: $black;
+
+          & > ul {
+            max-height: 250px;
+          }
+        }
       }
     }
   }

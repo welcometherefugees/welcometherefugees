@@ -4,6 +4,12 @@ de:
     description: "Eine neue Flüchtlingsphilosophie: Welcome the refugees, schließt sie nicht aus."
   navigation:
     information: Informationen
+    about:
+      text: Über die Seite
+      link: ueber-die-seite
+    help:
+      text: Helfen
+      link: helfen
   footer: >
           <p>Nichts auf dieser Seite soll irgendjemanden beleidigen.</p>
           <p>Es tut uns leid, dass bisher noch nicht mehr hier zu sehen ist.
@@ -17,6 +23,12 @@ en:
     description: "A new philosophy regarding refugees: Welcome the refugees, don't exclude them."
   navigation:
     information: Information
+    about:
+      text: About the site
+      link: about-the-site
+    help:
+      text: Help
+      link: help
   footer: >
           <p>Nothing on this site is intended to insult anyone.</p>
           <p>We're sorry that there's nothing here yet.
