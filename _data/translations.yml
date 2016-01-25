@@ -1,0 +1,22 @@
+de:
+  site:
+    subheading: Unsere Seite ist auch bald da.
+    description: "Eine neue Flüchtlingsphilosophie: Welcome the refugees, schließt sie nicht aus."
+  footer: >
+          <p>Nichts auf dieser Seite soll irgendjemanden beleidigen.</p>
+          <p>Es tut uns leid, dass bisher noch nicht mehr hier zu sehen ist.
+          Wir empfehlen allerdings:</br>
+          <a href="http://www.netz-gegen-nazis.de/">Netz-gegen-Nazis.de</a>,
+          <a href="http://publikative.org/">Publikative.org</a>, sowie <a href="http://www.fluechtlinge-willkommen.de/">Fl&uuml;chtlinge Willkommen</a></p>
+
+en:
+  site:
+    subheading: Our site will soon be here.
+    description: "A new philosophy regarding refugees: Welcome the refugees, don't exclude them."
+  footer: >
+          <p>Nothing on this site is intended to insult anyone.</p>
+          <p>We're sorry that there's nothing here yet.
+          Though we recommend (German):</br>
+          <a href="http://www.netz-gegen-nazis.de/">Netz-gegen-Nazis.de</a>,
+          <a href="http://publikative.org/">Publikative.org</a>, as well as
+          <a href="http://www.fluechtlinge-willkommen.de/">Flüchtlinge Willkommen</a></p>

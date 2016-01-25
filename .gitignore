@@ -1,1 +1,4 @@
-/design/node_modules
+_site/
+.sass-cache/
+.jekyll-metadata
+design/

@@ -1,0 +1,36 @@
+name: Welcome The Refugees
+
+google_analytics: UA-64329198-4
+social_media_image: http://welcometherefugees.de/img/welcometherefugees.png
+url: http://welcometherefugees.de
+
+baseurl: "/"
+
+markdown: redcarpet
+highlighter: pygments
+permalink: /:title/
+
+sass:
+  style: :compressed # You might prefer to minify using :compressed
+
+gems:
+  - jekyll-sitemap # Create a sitemap using the official Jekyll sitemap gem
+
+exclude:
+    - design
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "en"
+    values:
+      lang: "en"
