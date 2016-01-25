@@ -1,4 +1,5 @@
 ---
+title: Willkommen
 ---
 
 Hier werden bald Flüchtlinge begrüßt und besorgte Bürger aufgeklärt.

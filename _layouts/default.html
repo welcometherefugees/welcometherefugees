@@ -44,8 +44,7 @@
     <meta name="msapplication-wide310x150logo" content="/img/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="/img/mstile-310x310.png" />
 
-    <link rel="stylesheet" href="/fonts/fonts.css" type="text/css">
-    <link rel="stylesheet" href="/landingpage.css" type="text/css">
+    <link rel="stylesheet" href="/css/style.css" type="text/css" >
   </head>
   <body>
     <nav class="language">
@@ -55,10 +54,15 @@
 
     <header>
       <h1><a href="/{% if lang != 'de' %}{{ lang }}{% endif %}"><span><span class="hashtag black">#</span><span class="welcome">welcome</span></span><span class="black">the</span><span class="refugees">refugees</span></a></h1>
-      <h2>{% if page.title %}{{ page.title }}{% else %}{{ t.site.subheading }}{% endif %}</h2>
+
+      <!--<nav>
+        <a href="#">Blog</a>
+        <a href="#">{{ t.navigation.information }}</a>
+      </nav>-->
     </header>
 
     <section class="main">
+      {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
       {{ content }}
     </section>
 

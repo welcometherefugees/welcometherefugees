@@ -2,6 +2,8 @@ de:
   site:
     subheading: Unsere Seite ist auch bald da.
     description: "Eine neue Flüchtlingsphilosophie: Welcome the refugees, schließt sie nicht aus."
+  navigation:
+    information: Informationen
   footer: >
           <p>Nichts auf dieser Seite soll irgendjemanden beleidigen.</p>
           <p>Es tut uns leid, dass bisher noch nicht mehr hier zu sehen ist.
@@ -13,6 +15,8 @@ en:
   site:
     subheading: Our site will soon be here.
     description: "A new philosophy regarding refugees: Welcome the refugees, don't exclude them."
+  navigation:
+    information: Information
   footer: >
           <p>Nothing on this site is intended to insult anyone.</p>
           <p>We're sorry that there's nothing here yet.
