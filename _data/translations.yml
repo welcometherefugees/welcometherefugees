@@ -12,8 +12,8 @@ de:
       link: helfen
   footer: >
           <p>Nichts auf dieser Seite soll irgendjemanden beleidigen.</p>
-          <p>Es tut uns leid, dass bisher noch nicht mehr hier zu sehen ist.
-          Wir empfehlen allerdings:</br>
+          <p>Momentan sind wir dabei die Seite mit Inhalt zu füllen. Hilf' uns dabei oder übersetze, <a href="https://github.com/welcometherefugees/welcometherefugees">auf Github</a>.
+          Wir empfehlen außerdem:</br>
           <a href="http://www.netz-gegen-nazis.de/">Netz-gegen-Nazis.de</a>,
           <a href="http://publikative.org/">Publikative.org</a>, sowie <a href="http://www.fluechtlinge-willkommen.de/">Fl&uuml;chtlinge Willkommen</a></p>
 
@@ -31,7 +31,7 @@ en:
       link: help
   footer: >
           <p>Nothing on this site is intended to insult anyone.</p>
-          <p>We're sorry that there's nothing here yet.
+          <p>We're currently working on populating this site with content. Help us or translate, <a href="https://github.com/welcometherefugees/welcometherefugees">on Github</a>.
           Though we recommend (German):</br>
           <a href="http://www.netz-gegen-nazis.de/">Netz-gegen-Nazis.de</a>,
           <a href="http://publikative.org/">Publikative.org</a>, as well as
