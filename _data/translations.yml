@@ -4,7 +4,9 @@ de:
     description: "Eine neue Flüchtlingsphilosophie: Welcome the refugees, schließt sie nicht aus."
   navigation:
     toggle: Menü
-    information: Informationen
+    information:
+      text: Informationen
+      link: informationen
     blog: Blog
     about:
       text: Über die Seite
@@ -31,7 +33,9 @@ en:
     description: "A new philosophy regarding refugees: Welcome the refugees, don't exclude them."
   navigation:
     toggle: Menu
-    information: Information
+    information:
+      text: Information
+      link: information
     blog: Blog
     about:
       text: About the site
