@@ -14,8 +14,11 @@ de:
     help:
       text: Helfen
       link: helfen
+    contact:
+      text: Kontakt
+      link: kontakt
   footer: >
-          <p>Nichts auf dieser Seite soll irgendjemanden beleidigen.</p>
+          <p>Nichts auf dieser Seite soll irgendjemanden beleidigen. <a href="/kontakt">Hier kannst du uns erreichen</a>.</p>
           <p>Momentan sind wir dabei die Seite mit Inhalt zu füllen. Hilf' uns dabei oder übersetze, <a href="https://github.com/welcometherefugees/welcometherefugees">auf Github</a>.
           Wir empfehlen außerdem:</br>
           <a href="http://www.netz-gegen-nazis.de/">Netz-gegen-Nazis.de</a>,
@@ -35,7 +38,7 @@ en:
     toggle: Menu
     information:
       text: Information
-      link: information
+      link: #
     blog: Blog
     about:
       text: About the site
@@ -43,8 +46,11 @@ en:
     help:
       text: Help
       link: help
+    contact:
+      text: Contact us
+      link: contact
   footer: >
-          <p>Nothing on this site is intended to insult anyone.</p>
+          <p>Nothing on this site is intended to insult anyone. <a href="/contact">Contact us here.</a></p>
           <p>We're currently working on populating this site with content. Help us or translate, <a href="https://github.com/welcometherefugees/welcometherefugees">on Github</a>.
           Though we recommend (German):</br>
           <a href="http://www.netz-gegen-nazis.de/">Netz-gegen-Nazis.de</a>,

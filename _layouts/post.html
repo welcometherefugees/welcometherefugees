@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% assign lang = page.lang %}
+{% assign post = page %}
+{% assign t = site.data.translations[lang] %}
+
+<section class="post-view">
+  <article class="post">
+    {{ content }}
+
+    <div class="details">
+      <div class="categories">
+        {{ t.blog.post.categories }}:
+        {% for category in post.categories %}
+          {% if forloop.first %}
+            {% continue %}
+          {% endif %}
+          {{ category |capitalize }}
+        {% endfor %}
+      </div>
+      {% assign date = post.date|date: '%e. %b, %Y' %}
+      {{ t.blog.post.written-by | replace: '--author--', post.author | replace: '--date--', date }}
+    </div>
+
+    <b><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}blog">Zurück zum Blog</a></b>
+  </article>
+</section>

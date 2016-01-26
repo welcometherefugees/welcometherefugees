@@ -37,13 +37,15 @@ defaults:
       lang: "en"
   -
     scope:
-      path: "_posts"
+      path: ""
+      type: "posts"
     values:
       layout: "post"
   -
     scope:
       path: "_posts/de"
     values:
+      layout: "post"
       lang: de
       categories:
         - de

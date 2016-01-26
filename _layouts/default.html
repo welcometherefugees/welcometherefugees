@@ -81,6 +81,7 @@
             <ul>
               <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.about.link }}">{{ t.navigation.about.text }}</a></li>
               <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.help.link }}">{{ t.navigation.help.text }}</a></li>
+              <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.contact.link }}">{{ t.navigation.contact.text }}</a></li>
             </ul>
           </li>
         </ul>
@@ -88,7 +89,7 @@
     </header>
 
     <section class="main">
-      {% if page.title %}<h2>{{ page.title }}</h2>{% endif %}
+      {% if page.title %}<h2><a href="{{ page.url }}">{{ page.title }}</a></h2>{% endif %}
       {{ content }}
     </section>
 

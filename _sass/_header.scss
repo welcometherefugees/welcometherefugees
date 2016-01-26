@@ -6,7 +6,7 @@ header {
   @media (max-width: $breakpoint-md){
     margin-bottom: 25px;
   }
-  
+
   h1 {
     display: inline-block;
 
@@ -66,7 +66,13 @@ header {
 
           li {
             margin: 0;
+            width: 100%;
             padding: 5px 10px;
+            border-bottom: 1px solid rgba($black, 0.2);
+
+            &:last-of-type {
+              border-bottom: 2px solid rgba($black, 0.2);
+            }
 
             &:hover {
               color: $red;
@@ -167,7 +173,7 @@ nav.language {
   z-index: 1000;
   left: 5px;
   top: 5px;
-  font-size: 0.8em;
+  font-size: 0.9em;
   font-weight: bold;
   color: #000;
 }
