@@ -19,6 +19,7 @@ body {
   color: $white;
   font-family: 'Montserrat', sans-serif;
   font-size: 120%;
+  font-weight: 300;
   padding: 10px 5%;
   padding-bottom: 150px;
 
@@ -53,12 +54,12 @@ span.black {
 }
 
 ::selection {
-  background: #ed1c24; /* WebKit/Blink Browsers */
+  background: $red; /* WebKit/Blink Browsers */
   opacity: 1;
   z-index: 10;
 }
 ::-moz-selection {
-  background: #ed1c24; /* Gecko Browsers */
+  background: $red; /* Gecko Browsers */
 }
 
 .main {
