@@ -21,6 +21,10 @@ body {
   font-size: 120%;
   padding: 10px 5%;
   padding-bottom: 150px;
+
+  @media (max-width: $breakpoint-lg){
+    font-size: 100%;
+  }
 }
 
 
@@ -64,4 +68,4 @@ span.black {
 
 @import 'header';
 @import 'footer';
-@import 'post';
+@import 'blog';

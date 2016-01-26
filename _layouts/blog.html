@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{% assign lang = page.lang %}
+{% assign t = site.data.translations[lang] %}
+
+<section class="posts">
+  {% for post in site.categories.[lang] %}
+  <article class="post">
+    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+    {{ post.excerpt|truncatewords: 35, '...' }}
+
+    <b><a href="{{ post.url }}">{{ t.blog.post.read-more }}</a></b>
+
+    <div class="details">
+      <div class="categories">
+        {{ t.blog.post.categories }}:
+        {% for category in post.categories %}
+          {% if forloop.first %}
+            {% continue %}
+          {% endif %}
+          {{ category |capitalize }}
+        {% endfor %}
+      </div>
+      {% assign date = post.date|date: '%e. %b, %Y' %}
+      {{ t.blog.post.written-by | replace: '--author--', post.author | replace: '--date--', date }}
+    </div>
+  </article>
+  {% else %}
+    <p>{{ t.blog.no-articles }}</p>
+  {% endfor %}
+</section>

@@ -8,13 +8,25 @@ header {
 
     a {
       color: inherit;
+
+      @media (max-width: $breakpoint-sm){
+        & > span {
+          display: block;
+        }
+      }
     }
   }
 
   nav {
     position: absolute;
+    z-index: 100;
     right: 0;
     bottom: 10px;
+    transition: all 0.5s;
+
+    .nav-toggle {
+      display: none;
+    }
 
     a {
       text-transform: uppercase;
@@ -34,6 +46,7 @@ header {
       list-style-type: none;
 
       li {
+        display: inline-block;
         position: relative;
         margin: 0 15px;
         padding: 0;
@@ -67,11 +80,77 @@ header {
         }
       }
     }
+
+    @media (max-width: $breakpoint-md){
+      position: fixed;
+      height: 100%;
+      text-align: right;
+      right: -100%;
+      top: 0;
+      background-color: $black;
+      padding-top: 50px; // For Nav toggle
+
+      .nav-toggle {
+        display: block;
+        position: fixed;
+        top: 15px;
+        right: 15px;
+        cursor: pointer;
+
+        svg {
+          fill: $white;
+          height: 24px;
+          width: 24px;
+        }
+
+        .hide-nav {
+          display: none;
+        }
+      }
+
+      ul {
+        li {
+          display: block;
+
+          & > ul {
+              border-top: 1px solid rgba($white, 0.2);
+              border-bottom: 1px solid rgba($white, 0.2);
+              background-color: transparent;
+              color: $white;
+              max-height: none;
+
+              li {
+                padding: 2px 0;
+              }
+          }
+
+          &:hover {
+            color: $red;
+          }
+        }
+      }
+
+      &.shown {
+        right: 0%;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
+
+        .nav-toggle {
+          .show-nav {
+            display: none;
+          }
+
+          .hide-nav {
+            display: block;
+          }
+        }
+      }
+    }
   }
 }
 
 nav.language {
   position: fixed;
+  z-index: 1000;
   left: 5px;
   top: 5px;
   font-size: 0.8em;
