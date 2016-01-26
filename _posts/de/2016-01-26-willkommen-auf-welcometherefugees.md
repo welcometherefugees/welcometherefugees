@@ -4,7 +4,6 @@ author: Leon Weber
 categories:
   - de
   - allgemein
-excerpt_separator: "\n\n\n"
 ---
 Willkommen!
 
