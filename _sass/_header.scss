@@ -3,6 +3,10 @@ header {
   padding: 10px 0;
   margin-bottom: 50px;
 
+  @media (max-width: $breakpoint-md){
+    margin-bottom: 25px;
+  }
+  
   h1 {
     display: inline-block;
 
