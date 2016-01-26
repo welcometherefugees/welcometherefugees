@@ -76,7 +76,7 @@
         <ul>
           <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}blog">{{ t.navigation.blog }}</a></li>
           <li>
-            <a href="#">{{ t.navigation.information }}</a>
+            <a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.information.link }}">{{ t.navigation.information.text }}</a>
 
             <ul>
               <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.about.link }}">{{ t.navigation.about.text }}</a></li>
