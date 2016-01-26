@@ -2,6 +2,7 @@
 title: "Willkommen auf #WelcomeTheRefugees"
 author: Leon Weber
 categories:
+  - de
   - allgemein
 excerpt_separator: <!--more-->
 ---
