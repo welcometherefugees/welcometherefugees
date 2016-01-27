@@ -35,6 +35,8 @@ a {
 }
 
 h1, h2, h3 {
+  overflow: hidden;
+  text-overflow: ellipsis;
   text-transform: uppercase;
   font-weight: 900;
   line-height: 1;
