@@ -23,48 +23,48 @@
     <meta name="twitter:image" content="{{ site.social_media_image }}">
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/img/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/img/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="/img/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="/img/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="/img/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="/img/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="/img/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="/img/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="/img/favicon-128.png" sizes="128x128" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ site.baseurl }}/img/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{{ site.baseurl }}/img/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{{ site.baseurl }}/img/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}/img/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{{ site.baseurl }}/img/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{{ site.baseurl }}/img/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{{ site.baseurl }}/img/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{{ site.baseurl }}/img/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-196x196.png" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/img/favicon-128.png" sizes="128x128" />
     <meta name="application-name" content="&nbsp;"/>
     <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="/img/mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="/img/mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="/img/mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="/img/mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="/img/mstile-310x310.png" />
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/img/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="{{ site.baseurl }}/img/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="{{ site.baseurl }}/img/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="{{ site.baseurl }}/img/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="{{ site.baseurl }}/img/mstile-310x310.png" />
 
-    <link rel="stylesheet" href="/css/style.css" type="text/css" >
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" type="text/css" >
   </head>
   <body>
     <nav class="language">
-      <a href="{{ site.baseurl }}" {% if lang == 'de' %}class='active'{% endif %}>DE</a>
-      <a href="{{ site.baseurl }}en" {% if lang == 'en' %}class='active'{% endif %}>EN</a>
+      <a href="{{ site.baseurl }}/" {% if lang == 'de' %}class='active'{% endif %}>DE</a>
+      <a href="{{ site.baseurl }}/en" {% if lang == 'en' %}class='active'{% endif %}>EN</a>
     </nav>
 
     <header>
-      <h1><a href="/{% if lang != 'de' %}{{ lang }}{% endif %}"><span><span class="hashtag black">#</span><span class="welcome">welcome</span></span><span class="black">the</span><span class="refugees">refugees</span></a></h1>
+      <h1><a href="{{ site.baseurl }}/{% if lang != 'de' %}{{ lang }}{% endif %}"><span><span class="hashtag black">#</span><span class="welcome">welcome</span></span><span class="black">the</span><span class="refugees">refugees</span></a></h1>
 
       <nav>
         <span class="nav-toggle">
           <span class="show-nav">
             <svg>
-             <use xlink:href="/img/menu-show.svg#menu-show"></use>
+             <use xlink:href="{{ site.baseurl }}/img/menu-show.svg#menu-show"></use>
            </svg>
           </span>
           <span class="hide-nav">
             <svg>
-              <use xlink:href="/img/menu-hide.svg#menu-hide"></use>
+              <use xlink:href="{{ site.baseurl }}/img/menu-hide.svg#menu-hide"></use>
             </svg>
           </span>
           <span class="label">
@@ -74,14 +74,14 @@
 
         <!--<a href="#">Blog</a>-->
         <ul>
-          <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}blog">{{ t.navigation.blog }}</a></li>
+          <li><a href="{{ site.baseurl }}/{% if lang != 'de' %}{{ lang }}/{% endif %}blog">{{ t.navigation.blog }}</a></li>
           <li>
-            <a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.information.link }}">{{ t.navigation.information.text }}</a>
+            <a href="{{ site.baseurl }}/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.information.link }}">{{ t.navigation.information.text }}</a>
 
             <ul>
-              <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.about.link }}">{{ t.navigation.about.text }}</a></li>
-              <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.help.link }}">{{ t.navigation.help.text }}</a></li>
-              <li><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.contact.link }}">{{ t.navigation.contact.text }}</a></li>
+              <li><a href="{{ site.baseurl }}/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.about.link }}">{{ t.navigation.about.text }}</a></li>
+              <li><a href="{{ site.baseurl }}/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.help.link }}">{{ t.navigation.help.text }}</a></li>
+              <li><a href="{{ site.baseurl }}/{% if lang != 'de' %}{{ lang }}/{% endif %}{{ t.navigation.contact.link }}">{{ t.navigation.contact.text }}</a></li>
             </ul>
           </li>
         </ul>
@@ -105,6 +105,6 @@
       ga('create', '{{ site.google_analytics }}', 'auto');
       ga('send', 'pageview');
     </script>
-    <script src="/js/page.js"></script>
+    <script src="{{ site.baseurl }}/js/page.js"></script>
   </body>
 </html>

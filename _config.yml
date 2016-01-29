@@ -4,7 +4,7 @@ google_analytics: UA-64329198-4
 social_media_image: http://welcometherefugees.de/img/welcometherefugees.png
 url: http://welcometherefugees.de
 
-baseurl: "/"
+baseurl: "" # note no trailing slash
 
 markdown: redcarpet
 highlighter: pygments

@@ -23,6 +23,6 @@ layout: default
       {{ t.blog.post.written-by | replace: '--author--', post.author | replace: '--date--', date }}
     </div>
 
-    <b><a href="/{% if lang != 'de' %}{{ lang }}/{% endif %}blog">Zurück zum Blog</a></b>
+    <b><a href="{{ site.baseurl }}/{% if lang != 'de' %}{{ lang }}/{% endif %}blog">Zurück zum Blog</a></b>
   </article>
 </section>
