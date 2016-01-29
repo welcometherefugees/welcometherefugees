@@ -50,7 +50,7 @@ en:
       text: Contact us
       link: contact
   footer: >
-          <p>Nothing on this site is intended to insult anyone. <a href="/contact">Contact us here.</a></p>
+          <p>Nothing on this site is intended to insult anyone. <a href="contact">Contact us here.</a></p>
           <p>We're currently working on populating this site with content. Help us or translate, <a href="https://github.com/welcometherefugees/welcometherefugees">on Github</a>.
           Though we recommend (German):</br>
           <a href="http://www.netz-gegen-nazis.de/">Netz-gegen-Nazis.de</a>,
