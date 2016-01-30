@@ -9,5 +9,5 @@ Für Übersetzungen findet ihr die aktuellen Variablen in: _\_data/translations.
 Wenn ihr Probleme damit habt, aber unbedingt immer noch beitragen wollt, kontaktiert uns bitte per [Email](mailto:lw.leonweber@gmail.com).
 
 ## Für Entwickler
-### Code Guidelines
-1. Alles was in Redcarpet Markdown geschrieben werden kann, wird in RedCarpet Markdown geschrieben.
+### Unsere Regeln für sauberen Code
+1. Alles was in Redcarpet Markdown geschrieben werden kann, wird in RedCarpet Markdown geschrieben (d.h. in jeder .md Datei HTML vermeiden und Markdown bevorzugen).
