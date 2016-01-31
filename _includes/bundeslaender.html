@@ -1,10 +1,17 @@
-{% for bundesland in site.pages %}
-  {% if bundesland.bundesland == true and bundesland.lang == page.lang %}
-### [{{bundesland.title}}]({{ bundesland.url }})
-    {% for kreis in site.pages %}
-      {% if kreis.kreis == true and kreis.bundesland == bundesland.title %}
-* <h4>[{{ kreis.title }}]({{ kreis.url }})</h4>
-      {% endif %}
-    {% endfor %}
-  {% endif%}
+{% capture bundeslaender %}{% for bundesland in site.pages %}{% if bundesland.bundesland == true and bundesland.lang == page.lang %}{{ bundesland.title }}+{{ bundesland.url }}#{% endif %}{% endfor %}{% endcapture %}
+{% capture kreise %}{% for kreis in site.pages %}{% if kreis.kreis == true and kreis.lang == page.lang %}{{ kreis.title }}+{{ kreis.url }}+{{ kreis.bundesland }}#{% endif %}{% endfor %}{% endcapture %}
+{% assign kreise = kreise | split:'#' | sort %}
+{% assign bundeslaender = bundeslaender | split:'#' | sort %}
+
+{% for bundesland in bundeslaender %}
+  {% assign bundeslandinfo = bundesland | split:'+' %}
+<h3><a href="{{bundeslandinfo[1]}}">{{ bundeslandinfo[0] }}</a></h3>
+<ul>
+  {% for kreis in kreise %}
+  {% assign kreisinfo = kreis | split:'+' %}
+    {% if kreisinfo[2] == bundeslandinfo[0] %}
+<li><h4><a href="{{ kreisinfo[1] }}">{{ kreisinfo[0] }}</a></h4></li>
+    {% endif %}
+  {% endfor %}
+</ul>
 {% endfor %}
