@@ -14,23 +14,7 @@ Es gibt viele weitere Möglichkeiten aktiv zu helfen, am besten indem ihr euch a
 * [Amadeu-Antoni-Stiftung gegen Rechtsextremismus](http://www.amadeu-antonio-stiftung.de/)
 
 ## Regionale Hilfe
-
-
-{% for bundesland in site.pages %}
-    {% if bundesland.bundesland == true and page.language == de %}
-    
-###{{bundesland.title}} 
-
-        {% for kreis in site.pages %}
-
-            {% if kreis.kreis == true and kreis.bundesland == bundesland.title %}
-####[{{kreis.title}}]({{kreis.url}})
-            {% endif %}
-        {% endfor %}
-        
-    {% endif%}
-{% endfor %}
-
+{% include bundeslaender.html %}
 
 Wir haben die Daten verschiedenen Seiten entnommen, die Quellen sind angegeben. Sollte irgendetwas hier nicht gewünscht sein, [kontaktieren Sie uns bitte](/kontakt).
 
