@@ -1,7 +1,5 @@
 ---
 title: Schleswig-Holstein
 bundesland: true
+layout: bundesland
 ---
-
-### Schleswig-Holstein 
-
