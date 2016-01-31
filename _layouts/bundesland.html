@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+{% for kreis in site.pages %}
+<ul>
+  {% if kreis.kreis and kreis.bundesland == page.title and kreis.lang == page.lang %}
+  <li><h3><a href="{{ kreis.url }}">{{ kreis.title }}</a></h3></li>
+  {% endif %}
+</ul>
+{% endfor %}
