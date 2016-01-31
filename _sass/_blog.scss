@@ -8,8 +8,21 @@
   font-weight: 300;
 }
 
+.posts {
+  .post {
+    margin-bottom: 50px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
 .post {
   margin: 0 auto;
+
+  p:first-of-type {
+    margin-top: 0;
+  }
 
   a {
     position: relative;
