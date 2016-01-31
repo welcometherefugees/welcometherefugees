@@ -8,7 +8,7 @@ baseurl: "" # note no trailing slash
 
 markdown: redcarpet
 highlighter: pygments
-permalink: /:categories/:title/
+permalink: /blog/:categories/:title/
 
 sass:
   style: :compressed # You might prefer to minify using :compressed
